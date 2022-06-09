@@ -7,9 +7,29 @@
 response
 [
     {
-        "id_superHeroi": 0,
-        "nm_superHeroi": "",
-        "ds_poderes":	"",
-        "bl_podeVoar": false
+        "id": 0,
+        "nome": "",
+        "poder":	"",
+        "podeVoar": false
     }
 ]
+
+
+### ADICIONAR HEROI
+
+/POST /superHerois
+
+request
+{
+    "nome": "",
+    "poder":	"",
+    "podeVoar": false
+}
+
+response
+{
+        "nome": "",
+        "poder":	"",
+        "podeVoar": false
+        "id": 0,
+}
