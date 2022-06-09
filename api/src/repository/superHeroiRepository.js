@@ -23,5 +23,5 @@ export async function adicionarHeroi(heroi) {
     `
     const [resposta] = await con.query(comando, [heroi.nome, heroi.poder, heroi.podeVoar])
     heroi.id = resposta.insertId;
-    return resposta.affectedRows;
+    return heroi;
 }   
