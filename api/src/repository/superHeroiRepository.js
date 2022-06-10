@@ -22,6 +22,9 @@ export async function adicionarHeroi(heroi) {
 	    VALUES(?, ?, ?);
     `
     const [resposta] = await con.query(comando, [heroi.nome, heroi.poder, heroi.podeVoar])
+    if(!heroi.nome ||!heroi.poder|| !heroi.podeVoar ){
+        throw new Error('Todos os campos são obrigatórios!');
+    }
     heroi.id = resposta.insertId;
     return heroi;
 }   
