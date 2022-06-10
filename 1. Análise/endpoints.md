@@ -2,7 +2,7 @@
 
 ### CONSULTAR TODOS HEROIS
 
-/GET        /superHerois
+**/GET        /superHerois**
 
 _response_
 ```
@@ -18,7 +18,7 @@ _response_
 
 ### ADICIONAR HEROI
 
-/POST /superHerois
+**/POST /superHerois**
 
 _request_
 
