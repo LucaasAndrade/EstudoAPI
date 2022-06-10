@@ -4,7 +4,8 @@
 
 /GET        /superHerois
 
-response
+_response_
+```
 [
     {
         "id": 0,
@@ -13,23 +14,28 @@ response
         "podeVoar": false
     }
 ]
-
+```
 
 ### ADICIONAR HEROI
 
 /POST /superHerois
 
-request
+_request_
+
+```
 {
     "nome": "",
     "poder":	"",
     "podeVoar": false
 }
+```
 
-response
+_response_
+```
 {
         "nome": "",
         "poder":	"",
         "podeVoar": false
         "id": 0,
 }
+```
